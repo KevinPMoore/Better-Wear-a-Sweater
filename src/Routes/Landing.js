@@ -4,9 +4,9 @@ import LandingForm from '../Components/LandingForm/LandingForm';
 function Landing(props) {
     function confirmWeatherReport() {
         console.log('weatherReport is ', props.weatherReport)
-        /*if(props.weatherReport !== undefined) {
+        if(props.weatherReport !== undefined) {
             props.setHasWeather(true);
-        };*/
+        };
     };
 
     return(

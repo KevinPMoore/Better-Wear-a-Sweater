@@ -4,7 +4,6 @@ import './LandingForm.css';
 
 function LandingForm(props) {
     const [ location, setLocation ] = useState('');
-    const [ coordinates, setCoordinates ] = useState({});
 
     function handleLocation(ev) {
         setLocation(ev.target.value);
@@ -12,16 +11,13 @@ function LandingForm(props) {
 
     function handleLocationSubmit(ev) {
         ev.preventDefault();
-        Utils.parseLatLong(location)
-            .then(res => {
-                setCoordinates(res)
-            })
-            .then(() => {
-                return props.setWeatherReport(Utils.getWeather(coordinates));
-            })
-            .then(() => {
-                props.confirmWeatherReport();
-            });
+        Utils.getWeatherForLocation(location)
+        .then(res => {
+            props.setWeatherReport(res);
+        })
+        .then(() => {
+            props.confirmWeatherReport();
+        });
     };
 
     return(
