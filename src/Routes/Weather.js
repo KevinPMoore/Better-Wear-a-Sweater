@@ -1,5 +1,6 @@
 import ControlBar from '../Components/ControlBar/ControlBar';
 import Report from '../Components/Report/Report';
+import MoreInfo from '../Components/MoreInfo/MoreInfo';
 import Recommendation from '../Components/Recommendation/Recommendation';
 
 function Weather(props) {
@@ -8,6 +9,7 @@ function Weather(props) {
         <main>
             <ControlBar/>
             <Report weatherReport={props.weatherReport}/>
+            <MoreInfo/>
             <Recommendation/>
         </main>
     );

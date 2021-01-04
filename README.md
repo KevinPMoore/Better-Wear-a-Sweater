@@ -12,13 +12,12 @@ Wireframes
     Mobile
     Tablet
     Full-size
-Build out landing
-Landing form converts address to lat/long needed for API
-Set up endpoints in and CRUD functionality in Utils
+Finalize Landing content
 Build out display in Report
 Build out functionality in ControlBar
 Build out outfit logic in Recommendation
 Set up MoreInfo from API
+Allow users to use current location
 Enable users to check forecasts on future dates/times
 
 # Getting Started with Create React App

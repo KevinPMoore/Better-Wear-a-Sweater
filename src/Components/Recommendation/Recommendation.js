@@ -7,7 +7,7 @@ function Recommendation(props) {
         >
 
         </div>
-    )
+    );
 };
 
 export default Recommendation;
