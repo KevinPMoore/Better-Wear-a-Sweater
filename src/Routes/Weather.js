@@ -7,7 +7,7 @@ function Weather(props) {
     return(
         <main>
             <ControlBar/>
-            <Report/>
+            <Report weatherReport={props.weatherReport}/>
             <Recommendation/>
         </main>
     );

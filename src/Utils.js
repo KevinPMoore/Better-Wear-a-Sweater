@@ -22,7 +22,7 @@ function getWeatherForLocation(location) {
             return res.results[0].locations[0].latLng
         })
         .then(res => {
-            return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=` + res.lat + `&lon=` + res.lng + `&appid=` + API_KEY) 
+            return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=` + res.lat + `&lon=` + res.lng + `&units=imperial&appid=` + API_KEY) 
             .then(res => {
                 if(!res.ok) {
                     error = {code: res.status};
@@ -35,4 +35,4 @@ function getWeatherForLocation(location) {
         });
 }
 
-export default { getWeatherForLocation }
+export default { getWeatherForLocation };
