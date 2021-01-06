@@ -1,17 +1,16 @@
-import React, { useState } from 'react';
 import Utils from '../../Utils';
 import './LandingForm.css';
 
 function LandingForm(props) {
-    const [ location, setLocation ] = useState('');
+    
 
     function handleLocation(ev) {
-        setLocation(ev.target.value);
+        props.setLocation(ev.target.value);
     };
 
     function handleLocationSubmit(ev) {
         ev.preventDefault();
-        Utils.getWeatherForLocation(location)
+        Utils.getWeatherForLocation(props.location, props.weatherUnits)
         .then(res => {
             props.setWeatherReport(res);
         })

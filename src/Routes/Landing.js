@@ -11,7 +11,7 @@ function Landing(props) {
     return(
         <main>
             <LandingContent/>
-            <LandingForm setWeatherReport={props.setWeatherReport} confirmWeatherReport={confirmWeatherReport}/>
+            <LandingForm location={props.location} setLocation={props.setLocation} setWeatherReport={props.setWeatherReport} weatherUnits={props.weatherUnits} confirmWeatherReport={confirmWeatherReport}/>
         </main>
     );
 };

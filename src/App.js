@@ -7,14 +7,17 @@ import './App.css';
 function App() {
 
   const [ hasWeather, setHasWeather ] = useState(false);
+  const [ location, setLocation ] = useState('');
   const [ weatherReport, setWeatherReport ] = useState({});
+  const [ weatherUnits, setWeatherUnits ] = useState('imperial');
 
-  console.log('hasWeather is ', hasWeather)
+  console.log('initial hasWeather is ', hasWeather);
+  console.log('initial weatherUnits is ', weatherUnits);
 
   return (
     <div className="App">
       <Header/>
-      {hasWeather ? <Weather weatherReport={weatherReport}/> : <Landing setHasWeather={setHasWeather} weatherReport={weatherReport} setWeatherReport={setWeatherReport}/>}
+      {hasWeather ? <Weather location={location} weatherReport={weatherReport} setWeatherReport={setWeatherReport} setWeatherUnits={setWeatherUnits}/> : <Landing setHasWeather={setHasWeather} location={location} setLocation={setLocation} weatherReport={weatherReport} setWeatherReport={setWeatherReport} weatherUnits={weatherUnits}/>}
     </div>
   );
 };
