@@ -8,8 +8,8 @@ function Weather(props) {
         <main>
             <ControlBar location={props.location} setWeatherReport={props.setWeatherReport} setWeatherUnits={props.setWeatherUnits}/>
             <Report weatherReport={props.weatherReport}/>
-            <MoreInfo/>
-            <Recommendation/>
+            <MoreInfo weatherReport={props.weatherReport}/>
+            <Recommendation weatherReport={props.weatherReport}/>
         </main>
     );
 };
