@@ -6,7 +6,7 @@ import Recommendation from '../Components/Recommendation/Recommendation';
 function Weather(props) {
     return(
         <main>
-            <ControlBar location={props.location} setWeatherReport={props.setWeatherReport} setWeatherUnits={props.setWeatherUnits}/>
+            <ControlBar location={props.location} setWeatherReport={props.setWeatherReport} weatherUnits={props.weatherUnits} setWeatherUnits={props.setWeatherUnits}/>
             <Report weatherReport={props.weatherReport}/>
             <MoreInfo weatherReport={props.weatherReport}/>
             <Recommendation weatherReport={props.weatherReport}/>

@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header hasWeather={hasWeather} setHasWeather={setHasWeather} setWeatherReport={setWeatherReport}/>
-      {hasWeather ? <Weather location={location} weatherReport={weatherReport} setWeatherReport={setWeatherReport} setWeatherUnits={setWeatherUnits}/> : <Landing setHasWeather={setHasWeather} location={location} setLocation={setLocation} weatherReport={weatherReport} setWeatherReport={setWeatherReport} weatherUnits={weatherUnits}/>}
+      {hasWeather ? <Weather location={location} weatherReport={weatherReport} setWeatherReport={setWeatherReport} weatherUnits={weatherUnits} setWeatherUnits={setWeatherUnits}/> : <Landing setHasWeather={setHasWeather} location={location} setLocation={setLocation} weatherReport={weatherReport} setWeatherReport={setWeatherReport} weatherUnits={weatherUnits}/>}
     </div>
   );
 };

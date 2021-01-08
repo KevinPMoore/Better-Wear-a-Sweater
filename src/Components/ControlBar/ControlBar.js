@@ -1,4 +1,5 @@
 import Utils from '../../Utils';
+import './ControlBar.css';
 
 function ControlBar(props) {
 
@@ -15,22 +16,25 @@ function ControlBar(props) {
             className='ControlBar'
         >
             <button
-                className='ControlButton'
+                className={`ControlButton ${props.weatherUnits === 'metric' ? 'metric' : ''}`}
+                id='metric'
                 value='metric'
                 onClick={updateUnits}
             >
                 Celcius
             </button>
             <button
-                className='ControlButton'
+                className={`ControlButton ${props.weatherUnits === 'imperial' ? 'imperial' : ''}`}
+                id='imperial'
                 value='imperial'
                 onClick={updateUnits}
             >
                 Farenheit
             </button>
             <button
-                className='ControlButton'
-                value={'standard'}
+                className={`ControlButton ${props.weatherUnits === 'standard' ? 'standard' : ''}`}
+                value='standard'
+                id='standard'
                 onClick={updateUnits}
             >
                 Kelvin
