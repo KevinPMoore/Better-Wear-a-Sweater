@@ -9,8 +9,8 @@ function Report(props) {
             <p
                 className='Current'
             >
-                Its {Math.round(props.weatherReport.current.temp)}F outside right now. <br/>
-                But it feels like {Math.round(props.weatherReport.current.feels_like)}F.
+                Its {Math.round(props.weatherReport.current.temp)} outside right now. <br/>
+                But it feels like {Math.round(props.weatherReport.current.feels_like)}.
             </p>
             <p
                 className='Daily'

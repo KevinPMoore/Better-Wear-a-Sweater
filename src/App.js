@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
+      <Header hasWeather={hasWeather} setHasWeather={setHasWeather} setWeatherReport={setWeatherReport}/>
       {hasWeather ? <Weather location={location} weatherReport={weatherReport} setWeatherReport={setWeatherReport} setWeatherUnits={setWeatherUnits}/> : <Landing setHasWeather={setHasWeather} location={location} setLocation={setLocation} weatherReport={weatherReport} setWeatherReport={setWeatherReport} weatherUnits={weatherUnits}/>}
     </div>
   );
