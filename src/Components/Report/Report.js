@@ -11,8 +11,7 @@ Resume work here:
 function Report(props) {
 
     function setDayNight() {
-        const currentTime = Date.now();
-        if((currentTime > props.weatherReport.current.sunrise * 1000) && (currentTime < props.weatherReport.current.sunset * 1000)) {
+        if((props.weatherReport.current.dt > props.weatherReport.current.sunrise) && (props.weatherReport.current.dt < props.weatherReport.current.sunset)) {
             console.log('its day');
             return('d');
         } else {
