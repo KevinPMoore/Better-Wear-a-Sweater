@@ -1,11 +1,31 @@
 import './Report.css';
 
+/*
+Resume work here:
+    Have report <p> current say the current weather in addition to temp
+    Fix the wording on the <p> daily so that the first line reads better
+    Change the main <div> to use the daily weather[0] id instead of main
+    Creat CSS accompanyment so that the background icon is loaded off the new classname
+    Develop logic for icons to handle day/night and have it fire on componentDidMount
+*/
 function Report(props) {
+
+    function setDayNight() {
+        const currentTime = Date.now();
+        if((currentTime > props.weatherReport.current.sunrise * 1000) && (currentTime < props.weatherReport.current.sunset * 1000)) {
+            console.log('its day');
+            return('d');
+        } else {
+            console.log('its night');
+            return('n');
+        };
+    };
 
     return(
         <div
             className={['Report', props.weatherReport.current.weather[0].main].join(' ')}
         >
+            {setDayNight()}
             <p
                 className='Current'
             >

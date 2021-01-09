@@ -11,9 +11,6 @@ function App() {
   const [ weatherReport, setWeatherReport ] = useState({});
   const [ weatherUnits, setWeatherUnits ] = useState('imperial');
 
-  console.log('initial hasWeather is ', hasWeather);
-  console.log('initial weatherUnits is ', weatherUnits);
-
   return (
     <div className="App">
       <Header hasWeather={hasWeather} setHasWeather={setHasWeather} setWeatherReport={setWeatherReport}/>
