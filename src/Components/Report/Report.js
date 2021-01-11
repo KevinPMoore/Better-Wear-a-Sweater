@@ -2,6 +2,7 @@ import './Report.css';
 
 /*
 Resume work here:
+    Fix CSS to work with all icons and have background not repeat
     Have report <p> current say the current weather in addition to temp
     Fix the wording on the <p> daily so that the first line reads better
     Change the main <div> to use the daily weather[0] id instead of main
@@ -10,21 +11,10 @@ Resume work here:
 */
 function Report(props) {
 
-    function setDayNight() {
-        if((props.weatherReport.current.dt > props.weatherReport.current.sunrise) && (props.weatherReport.current.dt < props.weatherReport.current.sunset)) {
-            console.log('for icon purposes it is day');
-            return('d');
-        } else {
-            console.log('for icon purposes it is night');
-            return('n');
-        };
-    };
-
     return(
         <div
-            className={['Report', props.weatherReport.current.weather[0].main].join(' ')}
+            className={['Report', props.weatherReport.current.weather[0].icon].join(' ')}
         >
-            {setDayNight()}
             <p
                 className='Current'
             >

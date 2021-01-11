@@ -1,3 +1,7 @@
 .Report {
 
 }
+
+div[class*='10d'] {
+    background-image: url(http://openweathermap.org/img/wn/10d@2x.png);
+}
