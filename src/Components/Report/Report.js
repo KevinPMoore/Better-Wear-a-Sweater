@@ -12,10 +12,10 @@ function Report(props) {
 
     function setDayNight() {
         if((props.weatherReport.current.dt > props.weatherReport.current.sunrise) && (props.weatherReport.current.dt < props.weatherReport.current.sunset)) {
-            console.log('its day');
+            console.log('for icon purposes it is day');
             return('d');
         } else {
-            console.log('its night');
+            console.log('for icon purposes it is night');
             return('n');
         };
     };

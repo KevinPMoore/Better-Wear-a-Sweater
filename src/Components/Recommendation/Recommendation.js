@@ -30,21 +30,42 @@ function Recommendation(props) {
         const nightTemp = props.weatherReport.daily[0].temp.night;
         console.log('nightTemp is ', nightTemp);
 
-        //Determine which parts of the day you are in and which have already passed
+        //Determine which stage of day you are in
         const currentTime = props.weatherReport.current.dt;
         const currentTimeHours = new Date(currentTime*1000).getHours();
         
         const sunrise = props.weatherReport.current.sunrise;
         const sunset = props.weatherReport.current.sunset;
+
+        let stageOfDay;
+
         if(currentTime < sunrise || currentTime > sunset) {
-            console.log('it is night')
+            stageOfDay = 'night';
         } else if (currentTime > sunrise && currentTimeHours <= 11) {
-            console.log('it is morning')
+            stageOfDay = 'morning';
         } else if (currentTimeHours >= 12 && currentTimeHours <= 16) {
-            console.log('it is day')
+            stageOfDay = 'day';
         } else {
-            console.log('it is evening')
+            stageOfDay = 'evening';
         };
+
+        //Set up a switch to compare current stage of day to remaining stages
+        switch(stageOfDay) {
+            case 'morning':
+                console.log('day, evening and night are still ahead');
+                break;
+            case 'day':
+                console.log('evening and night are still ahead');
+                break;
+            case 'evening':
+                console.log('night is still ahead');
+                break;
+            case 'night':
+                console.log('night is all we need bby');
+                break;
+            default:
+                console.log('Does this app even work if used at like 2am?');
+        }
     };
 
     function renderRecommendation() {
