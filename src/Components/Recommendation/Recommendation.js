@@ -15,20 +15,16 @@ function Recommendation(props) {
 
     console.log('Recommendation report is ', props.weatherReport)
 
-    function setRecommendation() {
+    function renderRecommendation() {
         //Start with current temp
         const currentTemp = props.weatherReport.current.temp;
         console.log('currentTemp is ', currentTemp);
 
         //Get temps for morning, midday, evening and night
         const morningTemp = props.weatherReport.daily[0].temp.morn;
-        console.log('morningTemp is ', morningTemp);
         const dayTemp = props.weatherReport.daily[0].temp.day;
-        console.log('dayTemp is ', dayTemp);
         const eveningTemp = props.weatherReport.daily[0].temp.eve;
-        console.log('eveningTemp is ', eveningTemp);
         const nightTemp = props.weatherReport.daily[0].temp.night;
-        console.log('nightTemp is ', nightTemp);
 
         //Determine which stage of day you are in
         const currentTime = props.weatherReport.current.dt;
@@ -65,18 +61,14 @@ function Recommendation(props) {
                 break;
             default:
                 console.log('Does this app even work if used at like 2am?');
-        }
-    };
-
-    function renderRecommendation() {
-
+        };
     };
 
     return(
         <div
             className='Recommendation'
         >
-            {setRecommendation()}
+            {renderRecommendation()}
         </div>
     );
 };
