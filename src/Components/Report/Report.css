@@ -2,6 +2,128 @@
 
 }
 
+div[class*='01d'] {
+    background-image: url(http://openweathermap.org/img/wn/01d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='01n'] {
+    background-image: url(http://openweathermap.org/img/wn/01n@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='02d'] {
+    background-image: url(http://openweathermap.org/img/wn/02d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='02n'] {
+    background-image: url(http://openweathermap.org/img/wn/10d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='03d'] {
+    background-image: url(http://openweathermap.org/img/wn/03d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='03n'] {
+    background-image: url(http://openweathermap.org/img/wn/03n@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='04d'] {
+    background-image: url(http://openweathermap.org/img/wn/04d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='04n'] {
+    background-image: url(http://openweathermap.org/img/wn/04n@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='09d'] {
+    background-image: url(http://openweathermap.org/img/wn/09d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='09n'] {
+    background-image: url(http://openweathermap.org/img/wn/09n@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 div[class*='10d'] {
     background-image: url(http://openweathermap.org/img/wn/10d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='10n'] {
+    background-image: url(http://openweathermap.org/img/wn/10n@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='11d'] {
+    background-image: url(http://openweathermap.org/img/wn/11d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='11n'] {
+    background-image: url(http://openweathermap.org/img/wn/11n@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='13d'] {
+    background-image: url(http://openweathermap.org/img/wn/13d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='13n'] {
+    background-image: url(http://openweathermap.org/img/wn/13n@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='50d'] {
+    background-image: url(http://openweathermap.org/img/wn/50d@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*='50n'] {
+    background-image: url(http://openweathermap.org/img/wn/50n@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

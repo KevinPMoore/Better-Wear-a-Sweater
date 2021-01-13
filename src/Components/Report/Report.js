@@ -2,12 +2,8 @@ import './Report.css';
 
 /*
 Resume work here:
-    Fix CSS to work with all icons and have background not repeat
     Have report <p> current say the current weather in addition to temp
     Fix the wording on the <p> daily so that the first line reads better
-    Change the main <div> to use the daily weather[0] id instead of main
-    Creat CSS accompanyment so that the background icon is loaded off the new classname
-    Develop logic for icons to handle day/night and have it fire on componentDidMount
 */
 function Report(props) {
 
